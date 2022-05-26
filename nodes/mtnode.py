@@ -241,7 +241,7 @@ class XSensDriver(object):
             time_ref_msg.time_ref.secs = secs
             time_ref_msg.time_ref.nsecs = nsecs
             time_ref_msg.source = source
-            self.time_ref_pub.publish(time_ref_msg)
+            # self.time_ref_pub.publish(time_ref_msg)
 
         def stamp_from_itow(itow, y=None, m=None, d=None, ns=0, week=None):
             """Return (secs, nsecs) from GPS time of week ms information."""
